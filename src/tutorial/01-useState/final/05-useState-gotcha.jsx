@@ -1,25 +1,18 @@
-import { useState } from 'react';
+import { useState } from "react";
 
-const UseStateGotcha = () => {
-  const [value, setValue] = useState(0);
-
+const UseStateBasics = () => {
+  const [count, setCount] = useState(0);
   const handleClick = () => {
-    // setTimeout(() => {
-    // console.log('clicked the button');
-    //   setValue(value + 1);
-    // }, 3000);
-    setTimeout(() => {
-      console.log('clicked the button');
-      setValue((currentState) => {
-        return currentState + 1;
-      });
-    }, 3000);
+    // console.log(count)
+    setCount(count + 1);
+    // be careful, we can set any value
+    // setCount('pants');
   };
   return (
     <div>
-      <h1>{value}</h1>
-      <button className='btn' onClick={handleClick}>
-        increase
+      <h4>You clicked {count} times</h4>
+      <button className="btn" onClick={handleClick}>
+        Click me
       </button>
     </div>
   );

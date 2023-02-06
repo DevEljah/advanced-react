@@ -8,7 +8,7 @@ const ErrorExample = () => {
   return (
     <div>
       <h2>{count}</h2>
-      <button type='button' className='btn' onClick={handleClick}>
+      <button type="button" className="btn" onClick={handleClick}>
         increment
       </button>
     </div>
