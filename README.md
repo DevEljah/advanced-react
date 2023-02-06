@@ -1,6 +1,6 @@
 # React - Advanced Concepts
 
-## This Repositories has been made to follow along John Smilga's React-Course Advanced-Concepts I have enrolled (course purchased on udemy.com) // learned a lot thx to him! 
+### This Repositories has been made to follow along John Smilga's React-Course Advanced-Concepts I have enrolled (course purchased on udemy.com) // learned a lot thx to him! 
 
 [John Smilga's React Course](https://www.udemy.com/course/react-tutorial-and-projects-course/?referralCode=FEE6A921AF07E2563CEF)
 
