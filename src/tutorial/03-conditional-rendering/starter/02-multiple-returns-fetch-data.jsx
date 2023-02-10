@@ -4,6 +4,9 @@ const url = "https://api.github.com/users/QuincyLarson";
 
 const MultipleReturnsFetchData = () => {
   const [user, setUser] = useState({});
+  // const { name, avatar_url, company, html_url } = user;
+  // It's recommended to destructure it before the last "return" !
+
   const [isLoading, setIsLoading] = useState(true);
   const [isError, setIsError] = useState(false);
 
@@ -42,14 +45,15 @@ const MultipleReturnsFetchData = () => {
     return <h4> Thers is an Error</h4>;
   }
 
+  const { name, avatar_url, company, html_url } = user;
   return (
     <div>
       <h2>Fetch Data</h2>
       <div>
-        <img src={user.avatar_url} alt="img" />
-        <h4>{user.name}</h4>
-        <h4>{user.company}</h4>
-        <a href={user.html_url}>Profile</a>
+        <img src={avatar_url} alt="img" />
+        <h4>{name}</h4>
+        <h4>{company}</h4>
+        <a href={html_url}>Profile</a>
       </div>
     </div>
   );
