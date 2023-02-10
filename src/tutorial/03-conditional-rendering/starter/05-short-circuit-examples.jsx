@@ -21,6 +21,17 @@ const ShortCircuitExamples = () => {
         +
       </button> */}
       {user && <SomeComponent name={user.name} />}
+      <h2 style={{ color: "#fff", backgroundColor: "#000000" }}>
+        Ternary Operator in jsx
+      </h2>
+      <button className="btn"> {isEditing ? "Edit" : "Add"} </button>
+      {user ? (
+        <div>
+          <h4> Holla {user.name} </h4>
+        </div>
+      ) : (
+        <h4>please login</h4>
+      )}
     </div>
   );
 };
