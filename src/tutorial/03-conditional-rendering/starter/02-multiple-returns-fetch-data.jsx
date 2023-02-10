@@ -11,9 +11,21 @@ const MultipleReturnsFetchData = () => {
     const fetchData = async () => {
       try {
         const res = await fetch(url);
+        // const data = await res.json();
+        // setUser(data);
+        // console.log(data);
+
+        // <> with Axios this isnt the case! //
+        console.log(res); // "!res.ok" ! //
+        if (!res.ok) {
+          setIsError(true);
+          setIsLoading(false);
+          return;
+        }
         const data = await res.json();
-        console.log(data);
         setUser(data);
+        console.log(data);
+        // with Axios this isnt the case! </>//
       } catch (err) {
         console.log(err);
         setIsError(true);
