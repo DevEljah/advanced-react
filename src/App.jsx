@@ -1,4 +1,4 @@
-import Starter from "./tutorial/05-leverage-javascript/starter/Lilst";
+import Starter from "./tutorial/06-forms/starter/01-controlled-inputs";
 // import Final from "./tutorial/02-useEffect/final/05-cleanup-function";
 
 function App() {
