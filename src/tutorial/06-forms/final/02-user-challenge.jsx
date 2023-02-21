@@ -1,7 +1,7 @@
-import { useState } from 'react';
-import { data } from '../../../data';
+import { useState } from "react";
+import { data } from "../../../data";
 const UserChallenge = () => {
-  const [name, setName] = useState('');
+  const [name, setName] = useState("");
   const [users, setUsers] = useState(data);
 
   const handleSubmit = (e) => {
@@ -18,7 +18,7 @@ const UserChallenge = () => {
     const updatedUsers = [...users, newUser];
     setUsers(updatedUsers);
     // set back to empty
-    setName('');
+    setName("");
   };
 
   const removeUser = (id) => {
@@ -27,22 +27,22 @@ const UserChallenge = () => {
   };
   return (
     <div>
-      <form className='form' onSubmit={handleSubmit}>
+      <form className="form" onSubmit={handleSubmit}>
         <h4>Add User</h4>
-        <div className='form-row'>
-          <label htmlFor='name' className='form-label'>
+        <div className="form-row">
+          <label htmlFor="name" className="form-label">
             name
           </label>
           <input
-            type='text'
-            className='form-input'
+            type="text"
+            className="form-input"
             value={name}
             onChange={(e) => setName(e.target.value)}
-            id='name'
+            id="name"
           />
         </div>
 
-        <button type='submit' className='btn btn-block'>
+        <button type="submit" className="btn btn-block">
           submit
         </button>
       </form>
@@ -53,7 +53,7 @@ const UserChallenge = () => {
         return (
           <div key={user.id}>
             <h4>{user.name}</h4>
-            <button onClick={() => removeUser(user.id)} className='btn'>
+            <button onClick={() => removeUser(user.id)} className="btn">
               remove
             </button>
           </div>
