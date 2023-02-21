@@ -1,4 +1,4 @@
-import Starter from "./tutorial/06-forms/starter/04-other-inputs";
+import Starter from "./tutorial/06-forms/starter/05-form-data";
 // import Final from "./tutorial/06-forms/final/02-user-challenge";
 // import Final from "./tutorial/02-useEffect/final/05-cleanup-function";
 
