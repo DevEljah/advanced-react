@@ -77,9 +77,7 @@ const reducer = (state, action) => {
 
 }
 
-
 const [state, dispatch] = useReducer(reducer, defaultState)
-
 
 function someFunc() {
   dispatch({type: LIKE}) */
