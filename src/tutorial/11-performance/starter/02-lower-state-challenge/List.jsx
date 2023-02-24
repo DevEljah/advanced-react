@@ -1,6 +1,7 @@
-import Person from './Person';
+import Person from "./Person";
 
 const List = ({ people }) => {
+  // console.log("re");
   return (
     <div>
       {people.map((person) => {
