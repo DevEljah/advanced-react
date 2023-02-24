@@ -21,11 +21,13 @@ const LowerStateChallenge = () => {
 export default LowerStateChallenge;
 
 //////////////////////////////////////////////
+/////////////////// Befor! ///////////////////
 //////////////////////////////////////////////
 
 /* import { useState } from 'react';
 import { data } from '../../../../data';
 import List from './List';
+
 const LowerStateChallenge = () => {
   const [people, setPeople] = useState(data);
   const [name, setName] = useState('');
