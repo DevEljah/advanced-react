@@ -1,9 +1,10 @@
-import { useState } from 'react';
+import { useState } from "react";
 
+// slow down CPU
 const newItems = Array.from({ length: 5000 }, (_, index) => {
   return (
     <div key={index}>
-      <img src='/vite.svg' alt='' />
+      <img src="/vite.svg" alt="" />
     </div>
   );
 });
@@ -13,9 +14,9 @@ const SlowComponent = () => {
   return (
     <div
       style={{
-        display: 'grid',
-        gridTemplateColumns: '1fr 1fr 1fr',
-        marginTop: '2rem',
+        display: "grid",
+        gridTemplateColumns: "1fr 1fr 1fr",
+        marginTop: "2rem",
       }}
     >
       {items}
